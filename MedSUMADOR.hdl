@@ -1,0 +1,9 @@
+
+CHIP MedSUMADOR {
+	IN a, b;
+	OUT sum, carry;
+
+	PARTS:
+	XOR(a=a, b=b, out=sum);
+	AND(a=a, b=b, out=carry);
+}
